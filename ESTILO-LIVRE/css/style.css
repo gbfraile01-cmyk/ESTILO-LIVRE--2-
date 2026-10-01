@@ -1,0 +1,331 @@
+/* =====================================================
+ESTILO LIVRE - BARBEARIA
+CSS PERSONALIZADO
+===================================================== */
+
+/* =========================
+CONFIGURAÇÕES GERAIS
+========================= */
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: #222;
+background-color: #ffffff;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+background-color: #111111 !important;
+padding: 18px 0;
+}
+
+.navbar-brand {
+color: #d4af37 !important;
+font-size: 1.4rem;
+letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+color: #f0cf63 !important;
+}
+
+.nav-link {
+color: #ffffff !important;
+margin-left: 15px;
+transition: 0.3s;
+}
+
+.nav-link:hover {
+color: #d4af37 !important;
+}
+
+/* =========================
+HOME
+========================= */
+
+#home {
+background:
+linear-gradient(
+rgba(17, 17, 17, 0.92),
+rgba(17, 17, 17, 0.92)
+);
+color: #ffffff;
+}
+
+#home .text-uppercase {
+color: #d4af37;
+letter-spacing: 3px;
+}
+
+#home h1 {
+line-height: 1.1;
+}
+
+#home .lead {
+color: #dddddd;
+max-width: 550px;
+}
+
+#home .btn-dark {
+background-color: #d4af37;
+border-color: #d4af37;
+color: #111111;
+font-weight: bold;
+}
+
+#home .btn-dark:hover {
+background-color: #f0cf63;
+border-color: #f0cf63;
+}
+
+/* =========================
+DESTAQUE DA HOME
+========================= */
+
+#home .bg-secondary {
+background-color: #222222 !important;
+border: 1px solid #444444;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+#home .bg-secondary h2 {
+color: #d4af37;
+letter-spacing: 4px;
+}
+
+/* =========================
+SOBRE NÓS
+========================= */
+
+#sobre {
+background-color: #f5f5f5 !important;
+}
+
+#sobre h2 {
+color: #111111;
+}
+
+#sobre .bg-dark {
+background-color: #111111 !important;
+border-left: 5px solid #d4af37;
+}
+
+#sobre .bg-dark h3 {
+color: #d4af37;
+}
+
+/* =========================
+TÍTULOS DAS SEÇÕES
+========================= */
+
+section .text-uppercase {
+color: #b18b1c;
+letter-spacing: 2px;
+font-size: 0.85rem;
+}
+
+/* =========================
+SERVIÇOS
+========================= */
+
+#servicos {
+background-color: #ffffff;
+}
+
+#servicos .card {
+border: none;
+border-top: 4px solid #d4af37;
+border-radius: 12px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servicos .card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+#servicos .card-title {
+color: #111111;
+}
+
+#servicos .card-text {
+color: #666666;
+}
+
+#servicos .fs-4 {
+color: #b18b1c;
+}
+
+/* =========================
+IMAGENS (HOME E SERVIÇOS)
+========================= */
+
+#home .hero-img {
+width: 100%;
+height: auto;
+max-height: 480px;
+object-fit: cover;
+border: 2px solid #d4af37;
+background-color: #222222;
+}
+
+#servicos .service-img {
+aspect-ratio: 4 / 3;
+overflow: hidden;
+background-color: #222222;
+border-radius: 12px 12px 0 0;
+}
+
+#servicos .service-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.4s ease;
+}
+
+#servicos .card:hover .service-img img {
+transform: scale(1.05);
+}
+
+
+/* =========================
+DEPOIMENTOS
+========================= */
+
+#depoimentos {
+background-color: #f5f5f5 !important;
+}
+
+#depoimentos .carousel-item {
+min-height: 200px;
+}
+
+#depoimentos .lead {
+max-width: 750px;
+margin: 0 auto 20px;
+font-style: italic;
+color: #444444;
+}
+
+#depoimentos h3 {
+color: #111111;
+}
+
+#depoimentos .carousel-control-prev,
+#depoimentos .carousel-control-next {
+width: 8%;
+}
+
+/* =========================
+CONTATO
+========================= */
+
+#contato {
+background-color: #ffffff;
+}
+
+#contato .form-label {
+color: #222222;
+}
+
+#contato .form-control {
+border: 1px solid #cccccc;
+border-radius: 8px;
+padding: 12px 15px;
+transition: 0.3s;
+}
+
+#contato .form-control:focus {
+border-color: #d4af37;
+box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.2);
+}
+
+#contato .btn-dark {
+background-color: #111111;
+border-color: #111111;
+transition: 0.3s;
+}
+
+#contato .btn-dark:hover {
+background-color: #d4af37;
+border-color: #d4af37;
+color: #111111;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background-color: #111111 !important;
+}
+
+footer p:first-child {
+color: #d4af37;
+letter-spacing: 2px;
+}
+
+/* =========================
+RESPONSIVIDADE
+========================= */
+
+@media (max-width: 991px) {
+
+
+.navbar-nav {
+    padding-top: 15px;
+}
+
+.nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+}
+
+#home {
+    text-align: center;
+}
+
+#home .lead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+@media (max-width: 576px) {
+
+
+#home h1 {
+    font-size: 2.5rem;
+}
+
+#home .bg-secondary {
+    padding: 40px 20px !important;
+}
+
+#sobre .bg-dark {
+    margin-top: 10px;
+}
+
+#depoimentos .carousel-item {
+    min-height: 250px;
+}
+
+#depoimentos .lead {
+    font-size: 1rem;
+}
+
+#contato .btn {
+    width: 100%;
+}
+
+
+}
